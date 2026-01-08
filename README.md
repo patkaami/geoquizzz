@@ -18,9 +18,8 @@ GeoQuizzz is a simple and interactive quiz game created as a school project. Tes
 - **HTML5 & CSS3**
 - **JavaScript (ES6+)**
 - **jQuery** - For DOM manipulation and event handling.
-- **SweetAlert2** - For beautiful, responsive popup alerts.
+- **SweetAlert2** - For responsive popup alerts.
 - **REST Countries API** - Real-time data source for countries, flags, and trivia.
-- **Google Fonts** - Typography (Cinzel, Goldman, Raleway).
 
 ## Setup & How to Play
 
