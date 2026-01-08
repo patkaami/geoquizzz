@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GeoQuizzz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Goldman:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="title">GeoQuizzz</h1>
+    </header>
+    <div class="main-content">
+        <div class="side-btn-container">
+            <button class="side-btn">Quiz History</button>
+            <div class="history-section" style="display:none;">
+                <button class="back-button">Back to Menu</button>
+                <h2>Latest 10 Quizzes</h2>
+                <div id="history-content">
+                </div>
+            </div>
+            <button class="side-btn">About</button>
+            <div class="about-section" style="display:none;">
+                <button class="back-button">Back to Menu</button>
+                <h2>About GeoQuizzz</h2>
+                <p>GeoQuizzz is a simple quiz game created as a school project. The game features four categories:
+                    <strong>Capitals, Flags, Trivia, and Mix.</strong> In each category, you must guess the correct
+                    answer based on the question presented.
+                    Before starting, you are asked to enter a nickname to track your progress. You can view your past
+                    quizzes in the History section, where you can select previously played quizzes and review them in
+                    Review Mode. <br>Note that the history only shows quizzes played in your current browser.
+
+                    The app is built with JavaScript, using the <a href="https://restcountries.com/">REST Countries
+                        API</a>, jQuery, and interactive alerts powered by SweetAlert2.
+                </p>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <section class="categories">
+                <button class="category-btn">Flags</button>
+                <button class="category-btn">Capitals</button>
+                <button class="category-btn">Trivia</button>
+                <button class="category-btn">Mix</button>
+            </section>
+        </div>
+
+        <section class="quiz-section" style="display:none;">
+            <h2 class="question"></h2>
+            <div class="options"></div>
+            <button class="next-btn" style="display:none;">Next Question</button>
+        </section>
+
+        <div id="nickname-container" style="display:none;">
+            <h3>Almost there!</h3>
+            <label for="nickname-input">Enter your nickname for keeping records of your learning! :)</label>
+            <div class="nickname-box">
+                <input type="text" id="nickname-input" placeholder="Your Name..." maxlength="15">
+                <button id="start-quiz-btn">Start Quiz</button>
+            </div>
+        </div>
+        <script src="js/data.js"></script>
+        <script src="js/quizLogic.js"></script>
+        <script src="js/ui.js"></script>
+        <script src="js/events.js"></script>
+    </main>
+</body>
+
+</html>
