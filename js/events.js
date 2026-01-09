@@ -10,10 +10,22 @@ $(document).ready(function () {
         navigateTo("nickname");
     });
 
+    function getSafeInput(text) {
+        if (!text) return text;
+        let safeText = text;
+        safeText = safeText.replace(/&/g, "&amp;");
+        safeText = safeText.replace(/</g, "&lt;");
+        safeText = safeText.replace(/>/g, "&gt;");
+        safeText = safeText.replace(/"/g, "&quot;");
+        safeText = safeText.replace(/'/g, "&apos;");
+        safeText = safeText.replace(/\//g, "&#x2F;");
+        return safeText;
+    }
+
     // start quiz button click event handler - generate questions and start quiz
     $("#start-quiz-btn").on("click", function () {
         let inputVal = $("#nickname-input").val().trim();
-        playerNickname = inputVal || "Player 1";
+        playerNickname = getSafeInput(inputVal) || "Player 1";
 
         // generate questions
         quizQuestions = generateQuestions(currentCategory);

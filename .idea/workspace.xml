@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf5af36f-86e3-48a8-878a-5fc4651aaef7" name="Changes" comment="" />
+    <list default="true" id="cf5af36f-86e3-48a8-878a-5fc4651aaef7" name="Changes" comment="feat(gitignore): add gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/events.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,9 +65,33 @@
       <workItem from="1767648473736" duration="73000" />
       <workItem from="1767895997207" duration="19000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(gitignore): add gitignore">
+      <option name="closed" value="true" />
+      <created>1767975532992</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767975532992</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(gitignore): add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(gitignore): add gitignore" />
   </component>
 </project>
